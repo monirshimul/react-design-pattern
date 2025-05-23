@@ -16,7 +16,7 @@ const withClick = (Component) => {
   };
   return (props) => {
     console.log("in the hoc props", props);
-    return <Component onClick={handleClick} {...props} />;
+    return <Component {...props} onClick={handleClick} />;
   };
 };
 
